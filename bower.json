@@ -1,0 +1,22 @@
+{
+  "name": "hospital",
+  "description": "hospital",
+  "main": "index.js",
+  "authors": [
+    "Vitaliy Volynets"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "scrollmagic": "^2.0.5"
+  }
+}

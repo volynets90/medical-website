@@ -1,0 +1,11 @@
+body {
+  background-color: #27c09f; }
+
+.block {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #5fc45f; }
