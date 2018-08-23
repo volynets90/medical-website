@@ -1,5 +1,5 @@
 /*          Reset            */
-body, html, h1, p{
+body, html, h1, h2, h3, h4, p{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -40,6 +40,12 @@ button{
 .noPaddingnoMargin{
     margin: 0;
     padding: 0;
+}
+.mb-mt-0{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .noPadding{
     padding: 0;
@@ -108,6 +114,7 @@ button{
     width: 51px;
     height: 51px;
     border-radius: 50%;
+    min-width: 51px;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -190,6 +197,7 @@ font-weight: 600;
 margin-top: 36px;
 background: url('../img/main.png') no-repeat center top;
 width: 100%;      
+margin-bottom: 0;
 }
 .headerMain_tittle{
 color: #474747;
@@ -254,4 +262,169 @@ left: 22px;
 .logo_img{
     width: 125px;
     height: 25px;
+}
+.section2{
+    margin-top: -22px;
+}
+.row_section2{
+    flex-wrap: nowrap;
+}
+.box
+{
+    width: 400px;
+    height: auto;
+    background-color: #191919;
+    padding:77px 60px 0 60px;
+    text-align: center;
+    .wrap__img{
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        width: 76px;
+        height: 76px;
+        text-align: center;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &:nth-child(1) img{
+        width: 45px;
+        height: 50px;
+    }
+    &:nth-child(2) img{
+        width: 51px;
+        height: 46px;
+    }
+    &:nth-child(3) img{
+        width: 31px;
+        height: 54px;
+    }
+    &:nth-child(4) img{
+        width: 44px;
+        height: 42px;
+    }
+    h3{
+        font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+    p{
+        font-size: 18px;
+        font-family: "OpenSans";
+        color: rgb(255, 255, 255);
+        line-height: 1.875;
+        text-align: center;
+        padding-bottom: 57px;
+    }
+}
+.box_style1{
+    background-color: rgb(67, 177, 210);
+}
+.box_style2{
+    background-color: rgb(63, 182, 198);
+}
+.box_style3{
+    background-color: rgb(60, 187, 187);
+}
+.box_style4{
+    background-color: rgb(55, 195, 168);
+}
+            /*          section 3           */
+
+.section3{
+    span{
+        font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(111, 111, 110);
+        font-weight: bold;
+        line-height: 1.2;
+        margin-left: 92px;
+        position: relative;
+        display: block;
+        margin-top: 120px;  
+            
+        &::before{
+            position: absolute;
+            content: "";
+            background: #1a9bdc;
+            border-radius: 50%;
+            width: 74px;
+            height: 74px;
+            left: -92px;
+            top: -18.5px;
+        }   
+        .choose_icon1{
+            position: absolute;
+            content: url("../img/emergency-icon.svg") ; 
+            width: 43px;
+            height: 45px;
+            left: -77px;
+            top: -4px;
+        }
+        .choose_icon2{
+            position: absolute;
+            content: url("../img/monokle.svg") ; 
+            width: 41px;
+            height: 53px;
+            left: -77px;
+            top: -10px;
+        }
+        .choose_icon3{
+            position: absolute;
+            content: url("../img/pills.svg") ; 
+            width: 45px;
+            height: 41px;
+            left: -80px;
+        }
+        .choose_icon4{
+            position: absolute;
+            content: url("../img/react.svg") ; 
+            width: 47px;
+            height: 53px;
+            left: -80px;
+            top: -7px;
+        }
+    }
+
+}
+.s3_row1{
+justify-content: center;
+max-width: 870px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 111px;
+}
+.section3__header{
+    font-size: 45px;
+    font-family: "Montserrat";
+    color: #494949;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+.section3__text{
+    font-size: 18px;
+    font-family: "OpenSans";
+    color: rgb(106, 106, 106);
+    line-height: 1.875;
+    text-align: center;
+    margin-top: 24px;   
+    margin-bottom: 20px; 
+}
+
+.s3_row2{
+    p{
+        font-size: 18px;
+        font-family: "OpenSans";
+        color: rgb(106, 106, 106);
+        line-height: 1.875;
+        text-align: left;
+        margin-top: 35px;
+    }
 }

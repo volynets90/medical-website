@@ -1,5 +1,5 @@
 /*          Reset            */
-body, html, h1, p {
+body, html, h1, h2, h3, h4, p {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -36,6 +36,12 @@ button {
 .noPaddingnoMargin {
   margin: 0;
   padding: 0; }
+
+.mb-mt-0 {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
 
 .noPadding {
   padding: 0; }
@@ -111,6 +117,7 @@ button {
   height: 51px;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+  min-width: 51px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -203,7 +210,8 @@ button {
 .headerMain {
   margin-top: 36px;
   background: url("../img/main.png") no-repeat center top;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 0; }
 
 .headerMain_tittle {
   color: #474747;
@@ -267,3 +275,163 @@ button {
 .logo_img {
   width: 125px;
   height: 25px; }
+
+.section2 {
+  margin-top: -22px; }
+
+.row_section2 {
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
+.box {
+  width: 400px;
+  height: auto;
+  background-color: #191919;
+  padding: 77px 60px 0 60px;
+  text-align: center; }
+  .box .wrap__img {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: white;
+    width: 76px;
+    height: 76px;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto; }
+  .box:nth-child(1) img {
+    width: 45px;
+    height: 50px; }
+  .box:nth-child(2) img {
+    width: 51px;
+    height: 46px; }
+  .box:nth-child(3) img {
+    width: 31px;
+    height: 54px; }
+  .box:nth-child(4) img {
+    width: 44px;
+    height: 42px; }
+  .box h3 {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: white;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 24px; }
+  .box p {
+    font-size: 18px;
+    font-family: "OpenSans";
+    color: white;
+    line-height: 1.875;
+    text-align: center;
+    padding-bottom: 57px; }
+
+.box_style1 {
+  background-color: #43b1d2; }
+
+.box_style2 {
+  background-color: #3fb6c6; }
+
+.box_style3 {
+  background-color: #3cbbbb; }
+
+.box_style4 {
+  background-color: #37c3a8; }
+
+/*          section 3           */
+.section3 span {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #6f6f6e;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-left: 92px;
+  position: relative;
+  display: block;
+  margin-top: 120px; }
+  .section3 span::before {
+    position: absolute;
+    content: "";
+    background: #1a9bdc;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    left: -92px;
+    top: -18.5px; }
+  .section3 span .choose_icon1 {
+    position: absolute;
+    content: url("../img/emergency-icon.svg");
+    width: 43px;
+    height: 45px;
+    left: -77px;
+    top: -4px; }
+  .section3 span .choose_icon2 {
+    position: absolute;
+    content: url("../img/monokle.svg");
+    width: 41px;
+    height: 53px;
+    left: -77px;
+    top: -10px; }
+  .section3 span .choose_icon3 {
+    position: absolute;
+    content: url("../img/pills.svg");
+    width: 45px;
+    height: 41px;
+    left: -80px; }
+  .section3 span .choose_icon4 {
+    position: absolute;
+    content: url("../img/react.svg");
+    width: 47px;
+    height: 53px;
+    left: -80px;
+    top: -7px; }
+
+.s3_row1 {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 111px; }
+
+.section3__header {
+  font-size: 45px;
+  font-family: "Montserrat";
+  color: #494949;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center; }
+
+.section3__text {
+  font-size: 18px;
+  font-family: "OpenSans";
+  color: #6a6a6a;
+  line-height: 1.875;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 20px; }
+
+.s3_row2 p {
+  font-size: 18px;
+  font-family: "OpenSans";
+  color: #6a6a6a;
+  line-height: 1.875;
+  text-align: left;
+  margin-top: 35px; }
