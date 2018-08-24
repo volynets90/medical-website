@@ -1,5 +1,5 @@
 /*          Reset            */
-body, html, h1, h2, h3, h4, p {
+body, html, h1, h2, h3, h4, p, section, img, span {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -32,6 +32,12 @@ button {
   -moz-osx-font-smoothing: inherit;
   /* Corrects inability to style clickable `input` types in iOS */
   -webkit-appearance: none; }
+
+/*            Custom styles    */
+body {
+  font-family: 'OpenSansRegular', sans-serif;
+  font-size: 16px;
+  font-weight: normal; }
 
 .noPaddingnoMargin {
   margin: 0;
@@ -333,8 +339,6 @@ button {
     margin-top: 20px;
     margin-bottom: 24px; }
   .box p {
-    font-size: 18px;
-    font-family: "OpenSans";
     color: white;
     line-height: 1.875;
     text-align: center;
@@ -352,7 +356,7 @@ button {
 .box_style4 {
   background-color: #37c3a8; }
 
-/*          section 3           */
+/*          section 3      Why choose us&     */
 .section3 span {
   font-size: 30px;
   font-family: "Montserrat";
@@ -362,7 +366,8 @@ button {
   margin-left: 92px;
   position: relative;
   display: block;
-  margin-top: 120px; }
+  margin-top: 120px;
+  font-weight: bold; }
   .section3 span::before {
     position: absolute;
     content: "";
@@ -401,6 +406,9 @@ button {
     left: -80px;
     top: -7px; }
 
+.section3 span:nth-last-child(2) {
+  margin-top: 90px; }
+
 .s3_row1 {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -420,8 +428,6 @@ button {
   text-align: center; }
 
 .section3__text {
-  font-size: 18px;
-  font-family: "OpenSans";
   color: #6a6a6a;
   line-height: 1.875;
   text-align: center;
@@ -429,9 +435,69 @@ button {
   margin-bottom: 20px; }
 
 .s3_row2 p {
-  font-size: 18px;
-  font-family: "OpenSans";
   color: #6a6a6a;
   line-height: 1.875;
   text-align: left;
   margin-top: 35px; }
+
+/*          Section4  feature      */
+.section4 {
+  background-image: url("../img/section4_bg.png");
+  width: 100%;
+  height: 592px;
+  background-repeat: no-repeat;
+  margin-top: -4px; }
+
+.feature {
+  padding-top: 162px; }
+
+.feature__item {
+  text-align: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center; }
+  .feature__item:nth-child(1) .feature__img {
+    width: 91px;
+    height: 80px; }
+  .feature__item:nth-child(2) .feature__img {
+    width: 80px;
+    height: 71px; }
+  .feature__item:nth-child(3) .feature__img {
+    width: 91px;
+    height: 62px; }
+  .feature__item:nth-child(4) .feature__img {
+    width: 91px;
+    height: 73px; }
+  .feature__item .count {
+    display: block;
+    margin-top: 47px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    position: relative; }
+    .feature__item .count:after {
+      position: absolute;
+      content: "";
+      border: #ffffff solid;
+      width: 85px;
+      height: 6px;
+      top: 86px;
+      left: 70px; }
+
+.feature__text {
+  margin-top: 59px;
+  font-family: 'Montserrat';
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center; }

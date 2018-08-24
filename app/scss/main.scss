@@ -1,5 +1,5 @@
 /*          Reset            */
-body, html, h1, h2, h3, h4, p{
+body, html, h1, h2, h3, h4, p, section, img, span{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -35,6 +35,12 @@ button{
   
       /* Corrects inability to style clickable `input` types in iOS */
       -webkit-appearance: none;
+  }
+  /*            Custom styles    */
+  body{
+      font-family: 'OpenSansRegular', sans-serif;
+      font-size: 16px;
+      font-weight: normal;
   }
   
 .noPaddingnoMargin{
@@ -315,8 +321,6 @@ left: 22px;
         margin-bottom: 24px;
     }
     p{
-        font-size: 18px;
-        font-family: "OpenSans";
         color: rgb(255, 255, 255);
         line-height: 1.875;
         text-align: center;
@@ -335,7 +339,7 @@ left: 22px;
 .box_style4{
     background-color: rgb(55, 195, 168);
 }
-            /*          section 3           */
+            /*          section 3      Why choose us&     */
 
 .section3{
     span{
@@ -347,7 +351,8 @@ left: 22px;
         margin-left: 92px;
         position: relative;
         display: block;
-        margin-top: 120px;  
+        margin-top: 120px;
+        font-weight: bold;
             
         &::before{
             position: absolute;
@@ -391,6 +396,9 @@ left: 22px;
             top: -7px;
         }
     }
+    span:nth-last-child(2){
+      margin-top: 90px;
+    }
 
 }
 .s3_row1{
@@ -409,22 +417,81 @@ margin-top: 111px;
     text-align: center;
 }
 .section3__text{
-    font-size: 18px;
-    font-family: "OpenSans";
     color: rgb(106, 106, 106);
     line-height: 1.875;
     text-align: center;
     margin-top: 24px;   
     margin-bottom: 20px; 
 }
-
 .s3_row2{
     p{
-        font-size: 18px;
-        font-family: "OpenSans";
         color: rgb(106, 106, 106);
         line-height: 1.875;
         text-align: left;
         margin-top: 35px;
     }
+}
+
+/*          Section4  feature      */
+.section4{
+    background-image: url("../img/section4_bg.png");
+    width: 100%;
+    height: 592px;
+    //background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -4px;
+    
+}
+.feature{
+    padding-top: 162px;
+}
+.feature__item{
+    //flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    &:nth-child(1) .feature__img{
+        width: 91px;
+        height: 80px;
+    }
+    &:nth-child(2) .feature__img{
+        width: 80px;
+        height: 71px;
+    }
+    &:nth-child(3) .feature__img{
+        width: 91px;
+        height: 62px;
+    }
+    &:nth-child(4) .feature__img{
+        width: 91px;
+        height: 73px;
+    }
+    .count{
+        display: block;
+        margin-top: 47px;
+        font-family: 'Montserrat';
+        color:  #ffffff;
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+        position: relative;
+        &:after{
+            position: absolute;
+            content:"";
+            border: #ffffff solid;
+            width: 85px;
+            height: 6px;
+            top: 86px;
+            left: 70px
+        }
+    }
+}
+.feature__text{
+    margin-top: 59px;
+    font-family: 'Montserrat';
+    color:  #ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
 }
