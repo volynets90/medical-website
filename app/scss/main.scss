@@ -451,21 +451,24 @@ margin-top: 111px;
     justify-content: center;
     align-items: center;
     align-content: center;
+    img{
+        //background: #000;
+    }
     &:nth-child(1) .feature__img{
-        width: 91px;
-        height: 80px;
+        width: auto;
+        height: 70px;
     }
     &:nth-child(2) .feature__img{
-        width: 80px;
-        height: 71px;
+        width: auto;
+        height: 70px;
     }
     &:nth-child(3) .feature__img{
-        width: 91px;
-        height: 62px;
+        width: auto;
+        height: 70px;
     }
     &:nth-child(4) .feature__img{
-        width: 91px;
-        height: 73px;
+        width: auto;
+        height: 70px;
     }
     .count{
         display: block;
@@ -476,6 +479,7 @@ margin-top: 111px;
         font-weight: 500;
         text-align: center;
         position: relative;
+        //letter-spacing: 1px;
         &:after{
             position: absolute;
             content:"";
@@ -483,7 +487,7 @@ margin-top: 111px;
             width: 85px;
             height: 6px;
             top: 86px;
-            left: 70px
+            left: 75px
         }
     }
 }
