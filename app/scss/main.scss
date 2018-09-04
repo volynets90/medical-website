@@ -36,14 +36,22 @@ button{
       /* Corrects inability to style clickable `input` types in iOS */
       -webkit-appearance: none;
   }
+
   /*            Custom styles    */
+  $h3_default:#494949;
+  $p_default:#6a6a6a;
+  $card_caption: #6f6f6e;
+  $card_font: 'Montserrat';
+
   body{
       font-family: 'OpenSansRegular', sans-serif;
       font-size: 16px;
       font-weight: normal;
       color: rgb(106, 106, 106);
   }
-  
+  .fab, .fas, .far{
+      cursor: pointer;
+  }
 .noPaddingnoMargin{
     margin: 0;
     padding: 0;
@@ -57,6 +65,21 @@ button{
 .noPadding{
     padding: 0;
 }
+.h3_default{
+font-family: 'Montserrat', sans-serif;
+color:  $h3_default;
+font-size: 45px;
+font-weight: 700;
+}
+.p_default{
+font-family: 'OpenSans', sans-serif;
+color: $p_default;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+}
+/*                           end custom style             */
+
 .header{
     margin: 0;
     padding: 0;
@@ -447,7 +470,6 @@ margin-top: 111px;
     padding-top: 162px;
 }
 .feature__item{
-    //flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -540,6 +562,11 @@ margin-top: 111px;
     width: 100%;
     height: 54px;
     border-radius: 50px 50px 50px 50px; 
+    transition-duration: 0.5s;
+  }
+.accordion_h4_default:hover{
+    background: #0087be;
+    color: #ffff;
 }
 .accordion{
     p{
@@ -549,6 +576,7 @@ margin-top: 111px;
 }
 .accordion__item{
     margin-top: 12px;
+    cursor: pointer;
 }
 .h4_belowImg{
     color: #6f6f6e;
@@ -587,4 +615,106 @@ width: 154px;
 height: 43px;
 margin-left: auto;
 margin-right: auto;
+}
+/*          Section 6    - Gallery       */
+.section6{
+    background: url("../img/sec6_bg.png") no-repeat;
+}
+.gallery_container{ 
+text-align: center;
+h3{
+    padding-top: 84px;
+    padding-bottom: 27px;
+    font-family: 'Montserrat', sans-serif;
+    color:  #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+}
+p{
+    font-family: 'OpenSansRegular', sans-serif;
+    color:  #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+}
+.gallery__row{
+    padding: 0;
+    padding-bottom: 94px;
+    img{
+        margin: 37px 37px 0 0;
+        
+    }
+    img:last-child{
+        margin-right: 0;
+        
+    }
+    .row{
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/*          Section 7   -  Our Team      */
+.section7{
+background: #ffffff;
+}
+.team__container{
+    text-align: center;
+    h3{
+        margin-top: 142px;
+    }
+    p{
+        margin-top: 47px;
+        margin-bottom: 82px;
+    }
+}
+.team__row{
+    margin-left: auto;
+    margin-right: auto;
+}
+.team__card{
+    margin-right: 29px;
+    &:last-child{
+        margin-right: 0;
+    }
+    span{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img{
+        max-width: 255px;
+        max-height: auto;
+    }
+    .socialBlock{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        padding-top: 23px;
+    }
+    .fab{
+        color:#0087be;
+        margin:0px;
+        margin-right: 21px;
+        &:last-child{
+            margin:0px;
+        }
+    }
+}
+.team__card__name{
+font-family: $card_font, sans-serif;
+color:  $card_caption;
+font-size: 25px;
+font-weight: 500;
+margin-top: 18px;
+margin-bottom: 10px;
+}
+.team__card__post{
+font-family: $card_font, sans-serif;
+color: $card_caption;
+font-size: 18px;
+font-weight: 500;
 }
