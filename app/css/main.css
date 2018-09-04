@@ -21,6 +21,7 @@ button {
   padding: 0;
   width: auto;
   overflow: visible;
+  cursor: pointer;
   background: transparent;
   /* inherit font & color from ancestor */
   color: inherit;
@@ -598,7 +599,15 @@ body {
   font-size: 22px;
   text-align: center;
   padding-top: 9px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.fa-caret-right:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
 
 .wrapImgBlock {
   margin-top: 45px; }
@@ -657,10 +666,10 @@ body {
 .team__container {
   text-align: center; }
   .team__container h3 {
-    margin-top: 142px; }
+    margin-top: 135px; }
   .team__container p {
     margin-top: 47px;
-    margin-bottom: 82px; }
+    margin-bottom: 78px; }
 
 .team__row {
   margin-left: auto;
@@ -685,7 +694,8 @@ body {
   .team__card .fab {
     color: #0087be;
     margin: 0px;
-    margin-right: 21px; }
+    margin-right: 21px;
+    margin-bottom: 130px; }
     .team__card .fab:last-child {
       margin: 0px; }
 
@@ -702,3 +712,28 @@ body {
   color: #6f6f6e;
   font-size: 18px;
   font-weight: 500; }
+
+/*              Section8        Special Offer           */
+.specialOffer__container {
+  background: #e2e2e2; }
+  .specialOffer__container .wrapContent {
+    text-align: center; }
+  .specialOffer__container .button {
+    margin: 0;
+    padding: 0;
+    margin-top: 68px;
+    margin-bottom: 51px;
+    margin-left: 74px; }
+
+.offer__text {
+  font-family: 'Montserrat', sans-serif;
+  color: #494949;
+  font-size: 30px;
+  font-weight: 700;
+  display: inline-block; }
+
+.button_size_l {
+  width: 192px;
+  height: 54px;
+  font-size: 21px;
+  background-color: #0087be; }

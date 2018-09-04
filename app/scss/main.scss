@@ -20,7 +20,7 @@ button{
     padding: 0;
     width: auto;
     overflow: visible;
-
+    cursor: pointer;
     background: transparent;
       /* inherit font & color from ancestor */
       color: inherit;
@@ -42,6 +42,7 @@ button{
   $p_default:#6a6a6a;
   $card_caption: #6f6f6e;
   $card_font: 'Montserrat';
+  $specialOfferBack:  #e2e2e2;
 
   body{
       font-family: 'OpenSansRegular', sans-serif;
@@ -597,6 +598,10 @@ margin-top: 111px;
     text-align: center;
     padding-top: 9px;    
     margin-right: 20px;
+    transition: 0.5s;
+}
+.fa-caret-right:hover{
+    transform: rotate(90deg);
 }
 .wrapImgBlock{
     margin-top: 45px;
@@ -664,11 +669,11 @@ background: #ffffff;
 .team__container{
     text-align: center;
     h3{
-        margin-top: 142px;
+        margin-top: 135px;
     }
     p{
         margin-top: 47px;
-        margin-bottom: 82px;
+        margin-bottom: 78px;
     }
 }
 .team__row{
@@ -702,6 +707,7 @@ background: #ffffff;
         &:last-child{
             margin:0px;
         }
+        margin-bottom: 130px;
     }
 }
 .team__card__name{
@@ -717,4 +723,31 @@ font-family: $card_font, sans-serif;
 color: $card_caption;
 font-size: 18px;
 font-weight: 500;
+}
+/*              Section8        Special Offer           */
+.specialOffer__container{
+.wrapContent{
+    text-align: center;
+}
+background: $specialOfferBack;
+.button{
+margin: 0;
+padding: 0;
+margin-top: 68px;
+margin-bottom: 51px;
+margin-left: 74px;
+}
+}
+.offer__text{
+    font-family: 'Montserrat', sans-serif;
+    color:  #494949;
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+}
+.button_size_l{
+    width: 192px;
+    height: 54px;
+    font-size: 21px;
+    background-color:  #0087be;
 }
