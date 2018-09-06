@@ -14,7 +14,7 @@ ul {
 a{
     text-decoration: none;
 }
-button{
+button, input, textarea{
     border: none;
     margin: 0;
     padding: 0;
@@ -54,8 +54,8 @@ button{
       cursor: pointer;
   }
 .noPaddingnoMargin{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 .mb-mt-0{
     margin-bottom: 0;
@@ -79,6 +79,7 @@ font-size: 16px;
 font-weight: 400;
 line-height: 30px;
 }
+
 /*                           end custom style             */
 
 .header{
@@ -203,12 +204,9 @@ font-weight: 500;
 }
 
 .socialBlock{
-
-
     margin-left: 55px;
     padding-top: 33px;
-    //background-color: #2adc1a;
-    
+    //background-color: #2adc1a; 
 }
 .fab{
     /* Style for */
@@ -250,17 +248,17 @@ margin-top: 35px;
 .button{
 background-color: #1a9bdc;
 color: #ffffff;
-font-family: "Lato";
+font-family: "Lato", sans-serif;
 font-size: 18px;
 font-weight: 700;
 letter-spacing: 0.32px;
 text-transform: uppercase;
 border-radius: 50px 50px 50px 50px;
+box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
 }
 .button_ReadMore{
 margin-top: 42px;
 margin-bottom: 182px;
-box-shadow: -4px 12px 40px rgba(0, 1, 1, 0.2);
 }
 .button_size_m{
 width: 166px;
@@ -585,7 +583,7 @@ margin-top: 111px;
     line-height: 0px;
 }
 
-.fa-caret-right{
+.accordion__pointer{
     color: rgb(0, 135, 190);
     margin: 0;
     padding: 0;
@@ -600,7 +598,7 @@ margin-top: 111px;
     margin-right: 20px;
     transition: 0.5s;
 }
-.fa-caret-right:hover{
+.accordion__pointer:hover{
     transform: rotate(90deg);
 }
 .wrapImgBlock{
@@ -750,4 +748,108 @@ margin-left: 74px;
     height: 54px;
     font-size: 21px;
     background-color:  #0087be;
+}
+
+/*              Section 9 - Footer*/
+.section9{
+    background-color:  #171717;
+}
+.footer__container{
+    h4{
+        font-family: 'OpenSansRegular', sans-serif;
+        color:  #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        margin-top: 100px;
+        margin-bottom: 61px;
+        }
+    a{
+        color: #8d8d8d;
+    }
+    a:hover{
+        color: #cecece;
+    }
+}
+.ContactItem{
+font-family: 'OpenSansRegular', sans-serif;
+color:  #8d8d8d;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+text-align: left;
+display: flex;
+align-content: center;
+align-items: center;
+margin: 0;
+padding: 0;
+margin-top: 48px;
+a{
+    color: #8d8d8d;
+}
+}
+.ContactItem__mail, .ContactItem__phone, .ContactItem__geo{
+margin-left: 40px;
+}
+
+.footer__mailIco{
+    width: 41px;
+    height: 32px;
+}
+.footer__phoneIco{
+    width: auto;
+    height: 42px;
+    margin-left: -3px;
+}
+.footer__mapIco{
+    width: 41px;
+    height: 37px;
+}
+.mainFooterContent{
+    margin-bottom: 50px;
+}
+.wrapQuickLinks{
+    li{
+        margin-top: 18px;
+    }
+}
+.linkPointer{
+    font-size: 20px;
+    color:  #0087be;
+    margin-right: 20px;
+}
+ .formInput:nth-child(2){
+    margin-top: 20px;
+}
+.formInput{
+    border-bottom: #474747 1px solid;
+    padding-bottom: 15px;
+}
+.formTextArea{
+    padding-top: 28px;
+    border-bottom: #474747 1px solid;
+}
+.buttonSubmit{
+background-color:  #0087be;
+box-shadow: -4px 11px 40px 0px rgba(0, 1, 1, 0.2);
+width: 125px;
+height: 35px;
+font-size: 14px;
+margin-top: 24px;
+}
+.footer__social {
+    .fab{
+    color: #ffffff;
+    }
+    .socialBlock{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 108px;
+    }
+}
+.copy{
+    padding: 55px 0 55px 0;
+    background-color:  #1a1a1a;
+    text-align: center;
 }
