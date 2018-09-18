@@ -202,12 +202,14 @@ font-weight: 500;
         color: #262626; 
     }
 }
-
-.socialBlock{
-    margin-left: 55px;
-    padding-top: 33px;
-    //background-color: #2adc1a; 
+.d_flex{
+    display: flex;
 }
+.socialBlock{
+    padding-top: 33px; 
+    margin-left: auto;
+}
+
 .fab{
     /* Style for */
 padding: 0;
@@ -564,6 +566,10 @@ margin-top: 111px;
     transition-duration: 0.5s;
   }
 .accordion_h4_default:hover{
+    background: #0087be;
+    color: #ffff;
+}
+.accordion_h4_default_clicked{
     background: #0087be;
     color: #ffff;
 }

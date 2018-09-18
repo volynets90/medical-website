@@ -215,9 +215,15 @@ body {
   .menu__item:hover {
     color: #262626; }
 
+.d_flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 .socialBlock {
-  margin-left: 55px;
-  padding-top: 33px; }
+  padding-top: 33px;
+  margin-left: auto; }
 
 .fab {
   /* Style for */
@@ -570,6 +576,10 @@ body {
           transition-duration: 0.5s; }
 
 .accordion_h4_default:hover {
+  background: #0087be;
+  color: #ffff; }
+
+.accordion_h4_default_clicked {
   background: #0087be;
   color: #ffff; }
 
